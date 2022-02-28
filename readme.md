@@ -1,0 +1,1 @@
+Exercice javascript pour MNS, identification du niveau
