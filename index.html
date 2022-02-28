@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifumi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="gameBlock">
+        <div class="player">
+            <div id="player1"></div>
+            <div id="player2"></div>
+        </div>
+        <div class="blockCoups">
+            <button onclick="(()=>{game('Pierre')})()"><img src="img/pierre.png" alt="Pierre" width="100px"
+                    height="100px"></button>
+            <button onclick="(()=>{game('Feuilles')})()"><img src="img/feuille.png" alt="Feuille" width="100px"
+                    height="100px"></button>
+            <button onclick="(()=>{game('Ciseaux')})()"><img src="img/ciseaux.png" alt="Ciseaux" width="100px"
+                    height="100px"></button>
+        </div>
+
+        <div id="resultat">
+            <span id="resultPlayer"></span>
+            <span id="resultComputer"></span>
+            <span id="finalResult" ></span>
+        </div>
+        <div class="buttonReset">
+            <button onclick="reset()">Reset</button>
+        </div>
+        <div class="buttonReset">
+            <button onclick="replay()">Rejouer</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
